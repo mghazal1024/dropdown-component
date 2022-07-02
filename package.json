@@ -1,8 +1,8 @@
 {
   "name": "@mghazal1024/dropdown-component",
-  "version": "2.0.9",
+  "version": "2.0.8",
   "description": "",
-  "main": "src/dropdown.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "build": "rollup -c -o dist/dropdown.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
