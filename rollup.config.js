@@ -1,5 +1,5 @@
 import babel from 'rollup-plugin-babel' 
-import css from 'rollup-plugin-import-css'
+import styles from 'rollup-plugin-styles'
 
 const config = {
     input: 'src/dropdown.js',
@@ -8,14 +8,15 @@ const config = {
         babel({
             exclude: "node_modules/**"
         }),
-        css()
+        styles()
     ],
     output: {
         format: 'umd',
         name: 'dropdown',
         globals: {
             react: "React"
-        }
+        },
+        assetFileNames: "dropdown.css"
     }
 }
 export default config
